@@ -7,203 +7,207 @@
   <meta name="description" content="Andrew is the only licensed appraiser-agent in Utah County. Get the real numbers before you buy, sell, or downsize." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;1,400&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Hanken+Grotesk:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
 
   <!-- NAV -->
-  <header class="site-header">
-    <div class="container header-inner">
-      <a href="/" class="logo">
-        <span class="logo-main">Appraisal Professor</span>
-        <span class="logo-sub">Utah Real Estate</span>
+  <nav class="nav">
+    <div class="nav__inner">
+      <a class="brand" href="#top">
+        <span class="brand__mark">AP</span>
+        <span class="brand__name">The Appraisal Professor</span>
       </a>
-      <nav class="site-nav">
+      <div class="nav__links">
         <a href="#about">About</a>
         <a href="#videos">Videos</a>
-        <a href="#contact" class="nav-cta">Talk to Andrew</a>
-      </nav>
-      <button class="nav-toggle" aria-label="Open menu">&#9776;</button>
-    </div>
-  </header>
-
-  <!-- HERO -->
-  <section class="hero">
-    <div class="container hero-inner">
-      <div class="hero-eyebrow">Licensed Appraiser + Real Estate Agent</div>
-      <h1 class="hero-headline">You deserve to know what a home is actually worth.</h1>
-      <p class="hero-sub">Most agents guess. Andrew appraises. As the only licensed appraiser-agent in Utah County, he brings certified valuation expertise to every transaction — so you never overpay, undersell, or get surprised at closing.</p>
-      <div class="hero-actions">
-        <a href="#contact" class="btn btn-primary">Talk to Andrew</a>
-        <a href="#videos" class="btn btn-ghost">Watch the channel →</a>
-      </div>
-      <div class="hero-proof">
-        <div class="proof-item">
-          <span class="proof-number">Licensed</span>
-          <span class="proof-label">Certified Appraiser</span>
-        </div>
-        <div class="proof-divider"></div>
-        <div class="proof-item">
-          <span class="proof-number">Utah County</span>
-          <span class="proof-label">Primary Market</span>
-        </div>
-        <div class="proof-divider"></div>
-        <div class="proof-item">
-          <span class="proof-number">Free</span>
-          <span class="proof-label">Valuation Guide Below</span>
-        </div>
+        <a class="btn btn--gold" href="#contact">Talk to Andrew</a>
       </div>
     </div>
-  </section>
+  </nav>
 
-  <!-- DIFFERENTIATOR -->
-  <section class="difference" id="about">
-    <div class="container difference-inner">
-      <div class="difference-text">
-        <div class="section-eyebrow">Why it matters</div>
-        <h2>An appraiser sees what an agent misses.</h2>
-        <p>Real estate agents estimate value based on recent sales. Appraisers are trained to find the real number — adjusting for condition, location, layout, and market shifts that a quick CMA overlooks.</p>
-        <p>Andrew does both. That means when he prices your home, it's not a guess designed to win your listing — it's a defensible, data-backed number that holds up through inspection, appraisal, and closing.</p>
-        <a href="#contact" class="btn btn-primary">Get a straight answer →</a>
-      </div>
-      <div class="difference-card">
-        <div class="card-label">What you get with Andrew</div>
-        <ul class="card-list">
-          <li>
-            <span class="check">✓</span>
-            <div>
-              <strong>Certified appraisal expertise</strong>
-              <p>Not an estimate — a trained valuation from someone who does this for a living.</p>
-            </div>
-          </li>
-          <li>
-            <span class="check">✓</span>
-            <div>
-              <strong>Honest pricing from day one</strong>
-              <p>No inflated list price to win the listing. The right number, backed by data.</p>
-            </div>
-          </li>
-          <li>
-            <span class="check">✓</span>
-            <div>
-              <strong>Fewer surprises at closing</strong>
-              <p>When the bank's appraiser shows up, Andrew already knows what they'll find.</p>
-            </div>
-          </li>
-          <li>
-            <span class="check">✓</span>
-            <div>
-              <strong>Utah County expertise</strong>
-              <p>Spanish Fork, Springville, Payson, Salem, and surrounding markets.</p>
-            </div>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </section>
+  <main id="top">
 
-  <!-- LEAD MAGNET -->
-  <section class="magnet">
-    <div class="container magnet-inner">
-      <div class="magnet-content">
-        <div class="section-eyebrow">Free resource</div>
-        <h2>The Utah Home Valuation Guide</h2>
-        <p>Understand what your home is actually worth — and why Zillow is probably wrong. A plain-English breakdown of how appraisers calculate value, what kills deals at closing, and what to do before you list.</p>
-        <form class="magnet-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
-          <input type="text" name="name" placeholder="Your name" required />
-          <input type="email" name="email" placeholder="Your email" required />
-          <button type="submit" class="btn btn-primary">Send me the guide</button>
+    <!-- HERO -->
+    <section class="hero wrap">
+      <div class="hero__copy reveal">
+        <span class="eyebrow eyebrow--pill">● Licensed Appraiser + Real Estate Agent</span>
+        <h1 class="display">The number isn't a guess. It's <em>appraised</em>.</h1>
+        <p class="lead">Most agents estimate. Andrew appraises. As the only licensed appraiser-agent in Utah County, every price he gives is a defensible, data-backed figure, so you never overpay, undersell, or get surprised at closing.</p>
+        <div class="hero__cta">
+          <a class="btn btn--dark" href="#contact">Talk to Andrew</a>
+          <a class="btn btn--soft" href="#videos">Watch the channel →</a>
+        </div>
+      </div>
+
+      <!-- data ledger panel -->
+      <div class="ledger reveal">
+        <div class="ledger__head">
+          <img class="ledger__photo" src="assets/andrew.jpg" alt="Andrew, appraiser-agent" />
+          <div>
+            <div class="ledger__name">Andrew · Appraiser-Agent</div>
+            <div class="ledger__sub">Valuation worksheet · sample</div>
+          </div>
+        </div>
+        <div class="ledger__rows">
+          <div class="ledger__row"><span>Base comps (3 recent sales)</span><span class="mono">$472,000</span></div>
+          <div class="ledger__row"><span>Condition &amp; updates adj.</span><span class="mono pos">+$11,500</span></div>
+          <div class="ledger__row"><span>Lot &amp; location adj.</span><span class="mono pos">+$6,800</span></div>
+          <div class="ledger__row"><span>Market shift (111 days)</span><span class="mono neg">-$8,300</span></div>
+        </div>
+        <div class="ledger__total">
+          <span class="ledger__total-label">Defensible value</span>
+          <span class="ledger__total-value">$482,000</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- TRUST STRIP -->
+    <section class="trust">
+      <div class="wrap trust__inner">
+        <div class="trust__item">◆ Licensed Certified Appraiser</div>
+        <div class="trust__item">◆ Utah County Primary Market</div>
+        <div class="trust__item">◆ Free Valuation Guide Below</div>
+      </div>
+    </section>
+
+    <!-- WHY IT MATTERS -->
+    <section id="about" class="wrap split">
+      <div>
+        <span class="eyebrow">// Why it matters</span>
+        <h2 class="heading">An appraiser sees what an agent misses.</h2>
+      </div>
+      <div>
+        <p class="body">Real estate agents estimate value from recent sales. Appraisers are trained to find the <em>real number</em> by adjusting for condition, location, layout, and market shifts a quick CMA overlooks.</p>
+        <p class="body">Andrew does both. So when he prices your home, it isn't a guess designed to win your listing. It's a defensible, data-backed number that holds up through inspection, appraisal, and closing.</p>
+        <a class="btn btn--soft" href="#contact">Get a straight answer →</a>
+      </div>
+    </section>
+
+    <!-- BENEFITS -->
+    <section class="wrap benefits">
+      <span class="eyebrow">// What you get with Andrew</span>
+      <div class="benefits__grid">
+        <article class="card">
+          <div class="card__icon">✓</div>
+          <h3>Certified appraisal expertise</h3>
+          <p>A trained valuation from someone who does this for a living, not an estimate.</p>
+        </article>
+        <article class="card">
+          <div class="card__icon">✓</div>
+          <h3>Honest pricing from day one</h3>
+          <p>No inflated list price to win the listing. The right number, backed by data.</p>
+        </article>
+        <article class="card">
+          <div class="card__icon">✓</div>
+          <h3>Fewer surprises at closing</h3>
+          <p>When the bank's appraiser shows up, Andrew already knows what they'll find.</p>
+        </article>
+        <article class="card">
+          <div class="card__icon">✓</div>
+          <h3>Utah County expertise</h3>
+          <p>Spanish Fork, Springville, Payson, Salem, and surrounding markets.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- VALUATION GUIDE -->
+    <section class="guide">
+      <div class="wrap split split--mid">
+        <div>
+          <span class="eyebrow eyebrow--gold">// Free resource</span>
+          <h2 class="heading heading--light">The Utah Home Valuation Guide</h2>
+          <p class="body body--light">Understand what your home is actually worth, and why Zillow is probably wrong. A plain-English breakdown of how appraisers calculate value, what kills deals at closing, and what to do before you list.</p>
+        </div>
+        <form class="panel panel--dark" data-form="guide">
+          <label>Your email</label>
+          <input type="email" name="email" placeholder="you@email.com" required />
+          <button class="btn btn--gold btn--block" type="submit">Send me the guide</button>
+          <p class="fineprint">No spam. One email with the guide, and occasional market updates if you want them.</p>
         </form>
-        <p class="form-note">No spam. One email with the guide, and occasional market updates if you want them.</p>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- VIDEOS -->
-  <section class="videos" id="videos">
-    <div class="container">
-      <div class="section-header">
-        <div class="section-eyebrow">YouTube channel</div>
-        <h2>Real numbers. Plain talk.</h2>
-        <p>Andrew breaks down Utah real estate the way an appraiser would — with data, not hype.</p>
+    <!-- VIDEOS -->
+    <section id="videos" class="wrap videos">
+      <div class="videos__head">
+        <div>
+          <span class="eyebrow">// YouTube channel</span>
+          <h2 class="heading">Real numbers. Plain talk.</h2>
+        </div>
+        <a class="btn btn--soft" href="https://www.youtube.com/@TheAppraisalProfessor">See all videos →</a>
       </div>
-      <div class="video-grid">
-        <a class="video-card" href="https://www.youtube.com/watch?v=jeZuvdQ2CWI" target="_blank" rel="noopener">
-          <div class="video-thumb">
-            <img src="https://img.youtube.com/vi/jeZuvdQ2CWI/hqdefault.jpg" alt="Video thumbnail" loading="lazy" />
-            <span class="play-icon">&#9654;</span>
+      <div class="videos__grid">
+        <a class="video" href="https://www.youtube.com/watch?v=jeZuvdQ2CWI">
+          <div class="video__thumb">
+            <img src="https://img.youtube.com/vi/jeZuvdQ2CWI/hqdefault.jpg" alt="" loading="lazy" />
+            <span class="video__play">▶</span>
+            <span class="video__tag">Market Update</span>
           </div>
-          <div class="video-meta">
-            <span class="video-tag">Market Update</span>
-            <h3>The Utah County Real Estate Market 2026 — Homes Sitting 111 Days</h3>
-            <p>For the first time since 2008, homes in Alpine, Highland, and Lehi are sitting for months. Andrew breaks down what changed — and what it means for buyers and sellers right now.</p>
-          </div>
-        </a>
-        <a class="video-card" href="https://www.youtube.com/watch?v=-O1DnanK9sQ" target="_blank" rel="noopener">
-          <div class="video-thumb">
-            <img src="https://img.youtube.com/vi/-O1DnanK9sQ/hqdefault.jpg" alt="Video thumbnail" loading="lazy" />
-            <span class="play-icon">&#9654;</span>
-          </div>
-          <div class="video-meta">
-            <span class="video-tag">Listings</span>
-            <h3>Are iPhone Photos Good Enough for Real Estate Listings? (The $9,200 Answer)</h3>
-            <p>iPhone photos might save $400–800 upfront, but the data shows they can cost $10,000+ at closing. Here's what the comps actually reveal.</p>
+          <div class="video__body">
+            <h3>The Utah County Market 2026: Homes Sitting 111 Days</h3>
+            <p>For the first time since 2008, homes in Alpine, Highland, and Lehi sit for months.</p>
           </div>
         </a>
-        <a class="video-card" href="https://www.youtube.com/watch?v=d1iqA7-O8K8" target="_blank" rel="noopener">
-          <div class="video-thumb">
-            <img src="https://img.youtube.com/vi/d1iqA7-O8K8/hqdefault.jpg" alt="Video thumbnail" loading="lazy" />
-            <span class="play-icon">&#9654;</span>
+        <a class="video" href="https://www.youtube.com/watch?v=-O1DnanK9sQ">
+          <div class="video__thumb">
+            <img src="https://img.youtube.com/vi/-O1DnanK9sQ/hqdefault.jpg" alt="" loading="lazy" />
+            <span class="video__play">▶</span>
+            <span class="video__tag">Listings</span>
           </div>
-          <div class="video-meta">
-            <span class="video-tag">Downsizing</span>
+          <div class="video__body">
+            <h3>Are iPhone Photos Good Enough? (The $9,200 Answer)</h3>
+            <p>iPhone photos might save $400 to $800 upfront, but the data shows they can cost $10,000+.</p>
+          </div>
+        </a>
+        <a class="video" href="https://www.youtube.com/watch?v=d1iqA7-O8K8">
+          <div class="video__thumb">
+            <img src="https://img.youtube.com/vi/d1iqA7-O8K8/hqdefault.jpg" alt="" loading="lazy" />
+            <span class="video__play">▶</span>
+            <span class="video__tag">Downsizing</span>
+          </div>
+          <div class="video__body">
             <h3>Senior Downsizing: The Hidden Costs Nobody Talks About</h3>
-            <p>The expenses that could drain your retirement savings — and how to avoid them before you sign anything.</p>
+            <p>The expenses that could drain your retirement savings before you sign anything.</p>
           </div>
         </a>
       </div>
-      <div class="video-cta">
-        <a href="https://www.youtube.com/@TheAppraisalProfessor" target="_blank" class="btn btn-ghost">See all videos on YouTube →</a>
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- CONTACT -->
-  <section class="contact" id="contact">
-    <div class="container contact-inner">
-      <div class="contact-text">
-        <div class="section-eyebrow">Get in touch</div>
-        <h2>Talk to Andrew directly.</h2>
-        <p>Whether you're thinking about selling, trying to make sense of the market, or just want a straight answer on what your home is worth — Andrew's happy to talk.</p>
-        <p>No sales pressure. No obligation. Just an honest conversation with someone who knows how to read the numbers.</p>
+    <!-- CONTACT -->
+    <section id="contact" class="contact">
+      <div class="wrap split split--mid">
+        <div>
+          <span class="eyebrow">// Get in touch</span>
+          <h2 class="heading">Talk to Andrew directly.</h2>
+          <p class="body">Thinking about selling, trying to make sense of the market, or just want a straight answer on what your home is worth? Andrew's happy to talk.</p>
+          <p class="body body--sm"><em>No sales pressure. No obligation.</em> Just an honest conversation with someone who knows how to read the numbers.</p>
+        </div>
+        <form class="panel" data-form="contact">
+          <div class="field-row">
+            <div class="field"><label>Name</label><input type="text" name="name" /></div>
+            <div class="field"><label>Phone</label><input type="tel" name="phone" /></div>
+          </div>
+          <div class="field"><label>Email</label><input type="email" name="email" /></div>
+          <div class="field"><label>Message</label><textarea name="message" rows="3"></textarea></div>
+          <button class="btn btn--dark btn--block" type="submit">Send message</button>
+        </form>
       </div>
-      <form class="contact-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
-        <input type="text" name="name" placeholder="Your name" required />
-        <input type="email" name="email" placeholder="Your email" required />
-        <input type="tel" name="phone" placeholder="Phone (optional)" />
-        <textarea name="message" rows="4" placeholder="What's on your mind?"></textarea>
-        <button type="submit" class="btn btn-primary">Send message</button>
-      </form>
-    </div>
-  </section>
+    </section>
+  </main>
 
   <!-- FOOTER -->
-  <footer class="site-footer">
-    <div class="container footer-inner">
-      <div class="footer-brand">
-        <span class="logo-main">Appraisal Professor</span>
-        <span class="footer-lic">Licensed Appraiser & Real Estate Agent — Utah County</span>
+  <footer class="footer">
+    <div class="wrap footer__inner">
+      <div class="brand brand--footer">
+        <span class="brand__mark">AP</span>
+        <span>The Appraisal Professor · Licensed Appraiser &amp; Real Estate Agent, Utah County</span>
       </div>
-      <nav class="footer-nav">
-        <a href="#about">About</a>
-        <a href="#videos">Videos</a>
-        <a href="#contact">Contact</a>
-      </nav>
-      <p class="footer-legal">© 2026 Appraisal Professor. All rights reserved.</p>
+      <div class="footer__copy">© 2026 Appraisal Professor</div>
     </div>
   </footer>
 
-  <script src="main.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
