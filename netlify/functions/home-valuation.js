@@ -53,6 +53,9 @@ exports.handler = async (event) => {
 
     if (!rentcastResponse.ok) {
       const status = rentcastResponse.status;
+      const bodyText = await rentcastResponse.text();
+      console.error('RentCast request failed:', status, bodyText);
+
       const message =
         status === 404
           ? "We couldn't find that address. Double-check it and try again."
