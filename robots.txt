@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://appraisalprofessor.com/sitemap.xml
